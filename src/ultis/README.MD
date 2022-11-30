@@ -1,1 +1,1 @@
-### Folder chứa file hỗ trợ
+### Folder chứa file hỗ trợ setup tên, link, path trong app
