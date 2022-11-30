@@ -1,16 +1,17 @@
 import { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux'
-
+import { Home, Publics, Login } from './containers/public'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
 
-  const { test, homeData } = useSelector(state => state.app);
-
-  console.log('test', test)
-  console.log('homeData', homeData)
   return (
     <div className="App">
-      a
+      <Routes>
+        <Route path='/*' element={<Publics />}>
+          <Route path='home' element={<Home />} />
+          <Route path='login' element={<Login />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
