@@ -3,6 +3,8 @@ import logo from '../assets/logo-light.svg'
 import { sidebarMenu } from '../ultis/menu'
 import { NavLink } from 'react-router-dom'
 
+const notActiveStyle = 'py-2 px-[25px] font-bold text-[#32323D] flex gap-[12px] items-center text-[13px] hover:text-[#b72479]'
+const activeStyle = 'py-2  px-[25px] font-bold text-[#b72479] flex gap-[12px] items-center text-[13px] hover:text-[#b72479]'
 
 const SidebarLeft = () => {
     return (
@@ -16,7 +18,9 @@ const SidebarLeft = () => {
                         <NavLink
                             key={item.path}
                             to={item.path}
-                            className='py-2 px-[25px] font-bold flex'>
+                            end={item.end}
+                            className={({ isActive }) => isActive ? activeStyle : notActiveStyle}
+                        >
                             {item.icons}
                             <span>{item.text}</span>
                         </NavLink>
