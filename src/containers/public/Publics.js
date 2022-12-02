@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 import { SidebarLeft, SidebarRight } from '../../components'
 const Publics = () => {
   return (
-    <div className='w-full flex'>
+    <div className='w-full flex bg-[#f9dbdb]'>
       <div className='w-[240px] flex-none'>
         <SidebarLeft></SidebarLeft>
       </div>

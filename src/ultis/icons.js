@@ -2,7 +2,7 @@ import { MdOutlineLibraryMusic, MdOutlineFeed } from 'react-icons/md'
 import { FaRegPlayCircle } from 'react-icons/fa'
 import { AiOutlineLineChart } from 'react-icons/ai'
 
-import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs'
+import { BsArrowLeftShort, BsArrowRightShort, BsSearch } from 'react-icons/bs'
 
 const icons = {
     MdOutlineLibraryMusic,
@@ -10,7 +10,8 @@ const icons = {
     AiOutlineLineChart,
     MdOutlineFeed,
     BsArrowLeftShort,
-    BsArrowRightShort
+    BsArrowRightShort,
+    BsSearch
 }
 
 export default icons
