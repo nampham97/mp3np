@@ -5,13 +5,18 @@ const slider = () => {
 
     const { banner } = UseSelector(state => state.app)
     console.log('baner:', banner)
+
+    for (let i = 0; i < banner.length; i++) {
+
+    }
+
     return (
-        <div>
+        <div className='flex gap-4 w-full px-[59px] pt-8 overflow-hidden'>
             {banner?.map(item => {
                 return <img key={item.encodeId}
                     src={item.banner}
-                    className='flex-1 object-contain'
                     alt=''
+                    className='flex-1 object-contain w-1/3 rounded-lg'
                 />
             })}
         </div>
