@@ -1,1 +1,1 @@
-GET http://api-zingmp3-public.herokuapp.com/api/home
+GET http://localhost:5000/api/home
