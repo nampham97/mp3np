@@ -15,8 +15,8 @@ export const sidebarMenu = [
         icons: <FaRegPlayCircle size={24} />
     },
     {
-        path: 'zing-char',
-        text: '#Zingchart',
+        path: 'Life-char',
+        text: '#Lifechart',
         icons: <AiOutlineLineChart size={24} />
     },
     {

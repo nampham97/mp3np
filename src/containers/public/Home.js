@@ -3,6 +3,8 @@ import { Header, Slider } from '../../components'
 
 const home = () => {
 
+    const slideShow = document.getElementsByClassName('slideShow')
+    console.log(slideShow)
 
     return (
         <div className='overflow-y-auto'>
